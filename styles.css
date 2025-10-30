@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.container {
+  min-width: 400px;
+}
+
+.swiper {
+  padding: 10px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  min-width: 400px;
+  min-height: 400px;
+
+  background-color: #242424;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+
+  border-radius: 10px;
+}
+
+.swiper-pagination {
+  padding: 10px;
+}
+
+.glass-3d {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .swiper-wrapper {
+    margin: 0 25px;
+  }
+}
