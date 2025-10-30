@@ -12,8 +12,6 @@ body {
   background: linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b);
   background-attachment: fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
 }
 
 .img {
@@ -73,12 +71,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    transform: none !important;
   }
 }
 
 @media (max-width: 440px) {
   .swiper-wrapper {
-    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
